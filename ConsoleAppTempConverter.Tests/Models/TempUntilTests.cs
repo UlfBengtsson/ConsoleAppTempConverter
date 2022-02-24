@@ -75,7 +75,7 @@ namespace ConsoleAppTempConverter.Tests.Models
         [Theory]
         [InlineData(-459.67, -273.15)]
         [InlineData(-40, -40)]
-        [InlineData(32,0)]
+        [InlineData(32, 0)]
         [InlineData(68.0, 20)]
         public void FahrenheitToCelsiusTest(double fahrenheit, double expectedCelsius)
         {
@@ -88,5 +88,7 @@ namespace ConsoleAppTempConverter.Tests.Models
             //Assert
             Assert.Equal(expectedCelsius, result, 2);
         }
+        
+        
     }
 }
